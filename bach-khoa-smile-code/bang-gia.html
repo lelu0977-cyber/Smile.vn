@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bảng Giá Dịch Vụ Nha Khoa Niêm Yết - Nha Khoa Bách Khoa Smile 16 Lạc Long Quân</title>
+  <meta name="description" content="Bảng giá dịch vụ nha khoa niêm yết công khai, minh bạch tại Bách Khoa Smile 16 Lạc Long Quân, Vĩnh Phúc, Phú Thọ. Trọn gói không phát sinh chi phí, bảo hành chính hãng.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="container topbar-content">
+      <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+        <span class="topbar-item"><i class="fa-solid fa-location-dot" style="color: var(--secondary);"></i> 16 Lạc Long Quân, Vĩnh Phúc, Phú Thọ</span>
+        <span class="topbar-item"><i class="fa-solid fa-clock" style="color: var(--secondary);"></i> Mở cửa: <b>08:00 - 20:00 (Hàng ngày)</b></span>
+      </div>
+      <div style="display: flex; gap: 20px; align-items: center;">
+        <span class="topbar-item"><i class="fa-solid fa-star" style="color: #f59e0b;"></i> Đánh giá Google: <b>5.0 / 5.0 (30 đánh giá)</b></span>
+        <a href="tel:0976568283" class="topbar-item" style="color: #38bdf8; font-weight: 700;"><i class="fa-solid fa-phone-volume"></i> 0976.568.283</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="main-header glass-nav">
+    <div class="container nav-row">
+      <a href="index.html" class="logo-brand">
+        <div class="logo-icon-wrap">
+          <i class="fa-solid fa-tooth"></i>
+        </div>
+        <div>
+          <div class="logo-text-title">BÁCH KHOA <span>SMILE</span></div>
+          <div class="logo-text-sub">Nha Khoa Công Nghệ Cao</div>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li class="nav-item"><a href="index.html" class="nav-link">Trang Chủ</a></li>
+        <li class="nav-item"><a href="gioi-thieu.html" class="nav-link">Giới Thiệu</a></li>
+        <li class="nav-item"><a href="dich-vu-implant.html" class="nav-link">Dịch Vụ</a></li>
+        <li class="nav-item"><a href="bang-gia.html" class="nav-link active">Bảng Giá</a></li>
+        <li class="nav-item"><a href="danh-gia-khach-hang.html" class="nav-link">Đánh Giá (5.0⭐)</a></li>
+        <li class="nav-item"><a href="kien-thuc-nha-khoa.html" class="nav-link">Kiến Thức</a></li>
+        <li class="nav-item"><a href="lien-he.html" class="nav-link">Liên Hệ</a></li>
+      </ul>
+
+      <div style="display: flex; align-items: center; gap: 14px;">
+        <button class="btn-primary-gradient btn-open-booking" data-service="Bảng giá">
+          <i class="fa-regular fa-calendar-check"></i> Đặt Lịch Khám
+        </button>
+        <button class="mobile-toggle" id="mobileToggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <section style="background: linear-gradient(135deg, #f0f7ff 0%, #e0f2fe 100%); padding: 50px 0 60px 0; text-align: center;">
+    <div class="container">
+      <span class="badge-pill badge-blue" style="margin-bottom: 12px;"><i class="fa-solid fa-shield-halved"></i> MINH BẠCH - KHÔNG PHÁT SINH</span>
+      <h1 style="font-size: 2.8rem; font-weight: 800; color: var(--navy); margin-bottom: 16px;">Bảng Giá Dịch Vụ Nha Khoa Niêm Yết</h1>
+      <p style="font-size: 1.1rem; color: var(--slate-text); max-width: 760px; margin: 0 auto 24px auto;">
+        Nha khoa Bách Khoa Smile cam kết công khai 100% chi phí. Bệnh nhân được bác sĩ tư vấn kỹ lưỡng, lên phác đồ và báo giá trọn gói trước khi điều trị.
+      </p>
+      <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+        <span class="badge-pill badge-green"><i class="fa-solid fa-check"></i> Miễn phí khám & Chụp phim CT 5D (Trị giá 500k)</span>
+        <span class="badge-pill badge-gold"><i class="fa-solid fa-credit-card"></i> Hỗ trợ trả góp 0% lãi suất</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Bảng Giá Tabbed -->
+  <section class="section section-white">
+    <div class="container">
+
+      <!-- Tabs Buttons -->
+      <div class="pricing-tabs">
+        <button class="pricing-tab-btn active" data-category="implant"><i class="fa-solid fa-screwdriver"></i> Trồng Răng Implant</button>
+        <button class="pricing-tab-btn" data-category="niengrang"><i class="fa-solid fa-arrows-split-up-and-left"></i> Niềng Răng - Chỉnh Nha</button>
+        <button class="pricing-tab-btn" data-category="rangsu"><i class="fa-solid fa-gem"></i> Răng Sứ & Veneer</button>
+        <button class="pricing-tab-btn" data-category="nhorang"><i class="fa-solid fa-bolt-lightning"></i> Nhổ Răng Khôn</button>
+        <button class="pricing-tab-btn" data-category="tongquat"><i class="fa-solid fa-shield-heart"></i> Tổng Quát & Chữa Tủy</button>
+        <button class="pricing-tab-btn" data-category="treem"><i class="fa-solid fa-children"></i> Nha Khoa Trẻ Em</button>
+      </div>
+
+      <!-- Tab 1: IMPLANT -->
+      <div id="pricing-implant" class="pricing-category-table">
+        <h3 style="font-size: 1.4rem; font-weight: 700; color: var(--navy); margin-bottom: 16px;">1. Bảng Giá Cấy Ghép Trụ Implant Chính Hãng</h3>
+        <div class="table-responsive">
+          <table class="custom-table">
+            <thead>
+              <tr>
+                <th>Tên Dòng Trụ Implant</th>
+                <th>Xuất Xứ</th>
+                <th>Bảo Hành</th>
+                <th>Đặc Điểm Kỹ Thuật</th>
+                <th>Đơn Giá Trọn Gói</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Implant Biotem Hàn Quốc</b></td>
+                <td>Hàn Quốc</td>
+                <td>10 năm</td>
+                <td>Ren xoắn cắt xương tốt, độ bền cao, chi phí tiết kiệm</td>
+                <td class="table-price-tag">13.500.000 đ</td>
+              </tr>
+              <tr>
+                <td><b>Implant Dentium USA</b></td>
+                <td>Hoa Kỳ</td>
+                <td>15 năm</td>
+                <td>Khớp nối lục giác côn 10 độ, chịu lực nhai lớn</td>
+                <td class="table-price-tag">17.000.000 đ</td>
+              </tr>
+              <tr>
+                <td><b>Implant Neodent Thụy Sĩ</b></td>
+                <td>Thụy Sĩ (Straumann Group)</td>
+                <td>20 năm</td>
+                <td>Ren Acqua ưa nước, hỗ trợ cấy ghép tức thì sau nhổ răng</td>
+                <td class="table-price-tag">22.000.000 đ</td>
+              </tr>
+              <tr>
+                <td><b>Implant Straumann SLActive</b></td>
+                <td>Thụy Sĩ</td>
+                <td>Trọn đời</td>
+                <td>Tiêu chuẩn vàng thế giới, lành thương siêu tốc trong 3-4 tuần</td>
+                <td class="table-price-tag">32.000.000 đ</td>
+              </tr>
+              <tr>
+                <td><b>Ghép xương nhân tạo</b></td>
+                <td>Thụy Sĩ / Pháp</td>
+                <td>Theo phác đồ</td>
+                <td>Áp dụng cho bệnh nhân bị tiêu xương lâu ngày</td>
+                <td class="table-price-tag">3.000.000 – 6.000.000 đ / vị trí</td>
+              </tr>
+              <tr>
+                <td><b>Nâng xoang kín / xoang hở</b></td>
+                <td>Kỹ thuật cao</td>
+                <td>Theo phác đồ</td>
+                <td>Đảm bảo đủ chiều cao đặt trụ Implant hàm trên</td>
+                <td class="table-price-tag">5.000.000 – 10.000.000 đ</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Tab 2: NIỀNG RĂNG -->
+      <div id="pricing-niengrang" class="pricing-category-table" style="display: none;">
+        <h3 style="font-size: 1.4rem; font-weight: 700; color: var(--navy); margin-bottom: 16px;">2. Bảng Giá Niềng Răng - Chỉnh Nha Công Nghệ US 5D</h3>
+        <div class="table-responsive">
+          <table class="custom-table">
+            <thead>
+              <tr>
+                <th>Phương Pháp Niềng</th>
+                <th>Loại Khí Cụ</th>
+                <th>Thời Gian Dự Kiến</th>
+                <th>Ưu Điểm</th>
+                <th>Chi Phí Trọn Gói</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Mắc cài kim loại tiêu chuẩn</b></td>
+                <td>Thép không gỉ y khoa</td>
+                <td>18 - 24 tháng</td>
+                <td>Lực kéo mạnh mẽ, hiệu quả cao với ca hô, móm, khấp khểnh nặng</td>
+                <td class="table-price-tag">25.000.000 – 30.000.000 đ</td>
+              </tr>
+              <tr>
+                <td><b>Mắc cài kim loại tự buộc (Self-Ligating)</b></td>
+                <td>Nắp trượt thông minh</td>
+                <td>14 - 20 tháng</td>
+                <td>Giảm ma sát, ít đau ê, rút ngắn 4-6 tháng so với mắc cài thường</td>
+                <td class="table-price-tag">32.000.000 – 38.000.000 đ</td>
+              </tr>
+              <tr>
+                <td><b>Mắc cài sứ thẩm mỹ</b></td>
+                <td>Sứ sinh học trong suốt</td>
+                <td>18 - 24 tháng</td>
+                <td>Màu sắc trùng màu răng thật, thẩm mỹ khi giao tiếp</td>
+                <td class="table-price-tag">40.000.000 – 48.000.000 đ</td>
+              </tr>
+              <tr>
+                <td><b>Mắc cài sứ tự buộc</b></td>
+                <td>Sứ tự khóa cao cấp</td>
+                <td>16 - 22 tháng</td>
+                <td>Vừa thẩm mỹ cao vừa rút ngắn thời gian điều trị tối đa</td>
+                <td class="table-price-tag">48.000.000 – 55.000.000 đ</td>
+              </tr>
+              <tr>
+                <td><b>Khay trong suốt Invisalign Hoa Kỳ</b></td>
+                <td>SmartTrack cao cấp</td>
+                <td>12 - 18 tháng</td>
+                <td>Tháo lắp dễ dàng, vô hình 99%, quét dấu răng 3D xem trước kết quả</td>
+                <td class="table-price-tag">65.000.000 – 110.000.000 đ</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Tab 3: RĂNG SỨ & VENEER -->
+      <div id="pricing-rangsu" class="pricing-category-table" style="display: none;">
+        <h3 style="font-size: 1.4rem; font-weight: 700; color: var(--navy); margin-bottom: 16px;">3. Bảng Giá Răng Sứ Thẩm Mỹ & Mặt Dán Veneer</h3>
+        <div class="table-responsive">
+          <table class="custom-table">
+            <thead>
+              <tr>
+                <th>Dòng Răng Sứ</th>
+                <th>Xuất Xứ</th>
+                <th>Bảo Hành</th>
+                <th>Đặc Điểm Thẩm Mỹ</th>
+                <th>Đơn Giá / 1 Răng</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Răng sứ Titan sinh học</b></td>
+                <td>Đức / Mỹ</td>
+                <td>5 năm</td>
+                <td>Lõi hợp kim Titan phủ sứ bóng, độ cứng tốt</td>
+                <td class="table-price-tag">2.500.000 đ</td>
+              </tr>
+              <tr>
+                <td><b>Răng toàn sứ Zirconia Dmax</b></td>
+                <td>Đức</td>
+                <td>10 năm</td>
+                <td>Không đen viền lợi, chịu lực nhai 1200 MPa, trắng tự nhiên</td>
+                <td class="table-price-tag">4.000.000 đ</td>
+              </tr>
+              <tr>
+                <td><b>Răng toàn sứ Cercon HT</b></td>
+                <td>Đức (Dentsply Sirona)</td>
+                <td>15 năm</td>
+                <td>Độ quang học tinh khiết, bóng mờ men răng thật, tương thích tuyệt đối</td>
+                <td class="table-price-tag">6.000.000 đ</td>
+              </tr>
+              <tr>
+                <td><b>Mặt dán sứ Veneer Emax Press</b></td>
+                <td>Thụy Sĩ (Ivoclar Vivadent)</td>
+                <td>15 năm</td>
+                <td>Siêu mỏng chỉ 0.2 - 0.5mm, bảo tồn 100% tủy răng gốc không mài nhỏ</td>
+                <td class="table-price-tag">7.500.000 – 9.000.000 đ</td>
+              </tr>
+              <tr>
+                <td><b>Răng sứ cao cấp Lava Plus</b></td>
+                <td>3M Hoa Kỳ</td>
+                <td>20 năm</td>
+                <td>Chống bám màu, độ bền 1800 MPa, thẩm mỹ nụ cười chuẩn sao</td>
+                <td class="table-price-tag">10.000.000 – 12.000.000 đ</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Tab 4: NHỔ RĂNG KHÔN -->
+      <div id="pricing-nhorang" class="pricing-category-table" style="display: none;">
+        <h3 style="font-size: 1.4rem; font-weight: 700; color: var(--navy); margin-bottom: 16px;">4. Bảng Giá Nhổ Răng Khôn Bằng Sóng Siêu Âm Piezotome</h3>
+        <div class="table-responsive">
+          <table class="custom-table">
+            <thead>
+              <tr>
+                <th>Vị Trí & Tình Trạng Răng</th>
+                <th>Phương Pháp Nhổ</th>
+                <th>Thời Gian Can Thiệp</th>
+                <th>Thời Gian Hồi Phục</th>
+                <th>Đơn Giá / 1 Răng</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Nhổ răng sữa / Răng lung lay</b></td>
+                <td>Bôi tê / Tê tại chỗ</td>
+                <td>3 - 5 phút</td>
+                <td>Cầm máu ngay sau nhổ</td>
+                <td class="table-price-tag">100.000 – 200.000 đ</td>
+              </tr>
+              <tr>
+                <td><b>Nhổ răng vĩnh viễn thường</b></td>
+                <td>Kỹ thuật nhẹ nhàng</td>
+                <td>5 - 10 phút</td>
+                <td>Lành nướu sau 1-2 ngày</td>
+                <td class="table-price-tag">500.000 – 800.000 đ</td>
+              </tr>
+              <tr>
+                <td><b>Nhổ răng khôn mọc thẳng (Hàm trên)</b></td>
+                <td>Sóng siêu âm Piezotome</td>
+                <td>10 - 15 phút</td>
+                <td>Ăn uống bình thường sau 24h</td>
+                <td class="table-price-tag">1.000.000 – 1.500.000 đ</td>
+              </tr>
+              <tr>
+                <td><b>Nhổ răng khôn mọc lệch / Nghiêng 45 độ</b></td>
+                <td>Piezotome tách chân êm ái</td>
+                <td>15 - 20 phút</td>
+                <td>Không sưng bầm, liền thương nhanh</td>
+                <td class="table-price-tag">1.800.000 – 2.500.000 đ</td>
+              </tr>
+              <tr>
+                <td><b>Nhổ răng khôn mọc ngầm sâu / Chân quặp khó</b></td>
+                <td>Piezotome vi phẫu chuyên sâu</td>
+                <td>20 - 30 phút</td>
+                <td>Bác sĩ trưởng khoa trực tiếp thực hiện</td>
+                <td class="table-price-tag">2.500.000 – 3.500.000 đ</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Tab 5: NHA KHOA TỔNG QUÁT -->
+      <div id="pricing-tongquat" class="pricing-category-table" style="display: none;">
+        <h3 style="font-size: 1.4rem; font-weight: 700; color: var(--navy); margin-bottom: 16px;">5. Bảng Giá Dịch Vụ Nha Khoa Tổng Quát & Chữa Tủy</h3>
+        <div class="table-responsive">
+          <table class="custom-table">
+            <thead>
+              <tr>
+                <th>Dịch Vụ</th>
+                <th>Công Nghệ Áp Dụng</th>
+                <th>Đơn Vị</th>
+                <th>Đơn Giá (VNĐ)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Chụp phim toàn hàm CT Conebeam 5D</td>
+                <td>Máy quét kỹ thuật số thế hệ mới</td>
+                <td>Lần</td>
+                <td class="table-price-tag">400.000 đ <span style="font-size: 0.8rem; color: #10b981;">(Miễn phí khi làm dịch vụ)</span></td>
+              </tr>
+              <tr>
+                <td>Lấy cao răng & Đánh bóng cấp độ 1</td>
+                <td>Sóng siêu âm Cavitron êm ái</td>
+                <td>Lần</td>
+                <td class="table-price-tag">150.000 đ</td>
+              </tr>
+              <tr>
+                <td>Lấy cao răng cấp độ 2 - 3 (Mảng bám sâu, viêm lợi)</td>
+                <td>Siêu âm làm sạch túi lợi sâu</td>
+                <td>Lần</td>
+                <td class="table-price-tag">250.000 – 350.000 đ</td>
+              </tr>
+              <tr>
+                <td>Hàn trám răng thẩm mỹ Composite</td>
+                <td>Vật liệu thẩm mỹ trùng màu men răng</td>
+                <td>Răng</td>
+                <td class="table-price-tag">300.000 – 500.000 đ</td>
+              </tr>
+              <tr>
+                <td>Tẩy trắng răng Laser Whitening tại phòng khám</td>
+                <td>Đèn Laser kích hoạt phân tử thuốc an toàn</td>
+                <td>Liệu trình 45p</td>
+                <td class="table-price-tag">2.000.000 – 2.500.000 đ</td>
+              </tr>
+              <tr>
+                <td>Điều trị tủy nhóm răng cửa (Răng 1, 2, 3)</td>
+                <td>Máy đo chiều dài chóp vi phẫu</td>
+                <td>Răng</td>
+                <td class="table-price-tag">1.000.000 đ</td>
+              </tr>
+              <tr>
+                <td>Điều trị tủy nhóm răng tiền hàm (Răng 4, 5)</td>
+                <td>Hút tủy và hàn kín ống tủy sinh học</td>
+                <td>Răng</td>
+                <td class="table-price-tag">1.500.000 đ</td>
+              </tr>
+              <tr>
+                <td>Điều trị tủy nhóm răng hàm lớn (Răng 6, 7)</td>
+                <td>Nhiều ống tủy phức tạp</td>
+                <td>Răng</td>
+                <td class="table-price-tag">2.000.000 – 2.500.000 đ</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Tab 6: NHA KHOA TRẺ EM -->
+      <div id="pricing-treem" class="pricing-category-table" style="display: none;">
+        <h3 style="font-size: 1.4rem; font-weight: 700; color: var(--navy); margin-bottom: 16px;">6. Bảng Giá Nha Khoa Trẻ Em Thân Thiện</h3>
+        <div class="table-responsive">
+          <table class="custom-table">
+            <thead>
+              <tr>
+                <th>Hạng Mục Trẻ Em</th>
+                <th>Phương Pháp</th>
+                <th>Đơn Vị</th>
+                <th>Đơn Giá</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Khám răng & Tư vấn nụ cười cho bé</td>
+                <td>Bác sĩ chuyên khoa nhi vui vẻ, nhẹ nhàng</td>
+                <td>Lần</td>
+                <td class="table-price-tag" style="color: #10b981;">MIỄN PHÍ 100%</td>
+              </tr>
+              <tr>
+                <td>Nhổ răng sữa bôi tê không đau</td>
+                <td>Thuốc tê hoa quả dễ chịu</td>
+                <td>Răng</td>
+                <td class="table-price-tag">50.000 – 100.000 đ</td>
+              </tr>
+              <tr>
+                <td>Trám răng sâu răng sữa</td>
+                <td>Vật liệu GIC phóng thích Fluor ngừa sâu</td>
+                <td>Răng</td>
+                <td class="table-price-tag">200.000 – 300.000 đ</td>
+              </tr>
+              <tr>
+                <td>Bôi Vecni Fluor ngừa sâu răng toàn diện</td>
+                <td>Vecni Fluor tiêu chuẩn Hoa Kỳ</td>
+                <td>2 hàm</td>
+                <td class="table-price-tag">300.000 đ</td>
+              </tr>
+              <tr>
+                <td>Điều trị tủy răng sữa bằng máy</td>
+                <td>Không làm ảnh hưởng mầm răng vĩnh viễn</td>
+                <td>Răng</td>
+                <td class="table-price-tag">600.000 – 800.000 đ</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- CTA Book under price list -->
+      <div class="glass-card" style="margin-top: 50px; padding: 40px; text-align: center; background: linear-gradient(135deg, #f0f7ff, #ffffff);">
+        <h3 style="font-size: 1.8rem; font-weight: 800; color: var(--navy); margin-bottom: 12px;">Bạn Cần Tư Vấn Gói Dịch Vụ Phù Hợp Với Tình Trạng Răng?</h3>
+        <p style="color: var(--slate-text); font-size: 1.05rem; max-width: 650px; margin: 0 auto 24px auto;">
+          Liên hệ ngay với chuyên gia Bách Khoa Smile hoặc để lại số điện thoại để nhận phác đồ dự toán chi tiết kèm các chương trình ưu đãi đặc biệt trong tháng!
+        </p>
+        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+          <button class="btn-primary-gradient btn-open-booking" data-service="Báo giá chi tiết">
+            <i class="fa-regular fa-calendar-check"></i> Đặt Lịch Khám Nhận Báo Giá Chính Xác
+          </button>
+          <a href="tel:0976568283" class="btn-secondary-white">
+            <i class="fa-solid fa-phone"></i> Gọi Trực Tiếp: 0976.568.283
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1.5fr 1fr 1fr 1.2fr; gap: 36px;">
+        <div>
+          <div class="logo-brand" style="margin-bottom: 18px;">
+            <div class="logo-icon-wrap"><i class="fa-solid fa-tooth"></i></div>
+            <div>
+              <div class="logo-text-title" style="color: #fff;">BÁCH KHOA <span>SMILE</span></div>
+              <div class="logo-text-sub" style="color: #94a3b8;">Nha Khoa Công Nghệ Cao</div>
+            </div>
+          </div>
+          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.7; margin-bottom: 20px;">
+            16 Lạc Long Quân, Vĩnh Phúc, Phú Thọ. Cam kết dịch vụ y tế minh bạch, chu đáo, bảo hành chính hãng.
+          </p>
+          <span class="badge-pill badge-gold"><i class="fa-solid fa-star"></i> 5.0 Google Maps</span>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Dịch Vụ Chính</div>
+          <ul class="footer-links">
+            <li><a href="dich-vu-implant.html" class="footer-link"><i class="fa-solid fa-angle-right" style="font-size: 11px;"></i> Trồng Răng Implant</a></li>
+            <li><a href="dich-vu-nieng-rang.html" class="footer-link"><i class="fa-solid fa-angle-right" style="font-size: 11px;"></i> Niềng Răng US 5D</a></li>
+            <li><a href="dich-vu-rang-su.html" class="footer-link"><i class="fa-solid fa-angle-right" style="font-size: 11px;"></i> Răng Sứ & Veneer</a></li>
+            <li><a href="dich-vu-nho-rang-khon.html" class="footer-link"><i class="fa-solid fa-angle-right" style="font-size: 11px;"></i> Nhổ Răng Khôn Piezotome</a></li>
+            <li><a href="bang-gia.html" class="footer-link"><i class="fa-solid fa-angle-right" style="font-size: 11px;"></i> Bảng Giá Chi Tiết</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Về Bách Khoa Smile</div>
+          <ul class="footer-links">
+            <li><a href="gioi-thieu.html" class="footer-link"><i class="fa-solid fa-angle-right" style="font-size: 11px;"></i> Giới Thiệu</a></li>
+            <li><a href="doi-ngu-bac-si.html" class="footer-link"><i class="fa-solid fa-angle-right" style="font-size: 11px;"></i> Đội Ngũ Bác Sĩ</a></li>
+            <li><a href="danh-gia-khach-hang.html" class="footer-link"><i class="fa-solid fa-angle-right" style="font-size: 11px;"></i> Đánh Giá 5.0⭐</a></li>
+            <li><a href="kien-thuc-nha-khoa.html" class="footer-link"><i class="fa-solid fa-angle-right" style="font-size: 11px;"></i> Cẩm Nang Răng Miệng</a></li>
+            <li><a href="lien-he.html" class="footer-link"><i class="fa-solid fa-angle-right" style="font-size: 11px;"></i> Chỉ Đường Google Maps</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Địa Chỉ Phòng Khám</div>
+          <div style="font-size: 0.9rem; line-height: 1.8; color: #cbd5e1;">
+            <p><i class="fa-solid fa-location-dot" style="color: var(--secondary);"></i> 16 Lạc Long Quân, Vĩnh Phúc, Phú Thọ</p>
+            <p><i class="fa-solid fa-phone" style="color: var(--secondary);"></i> Hotline: <b style="color: #fff;">0976.568.283</b></p>
+            <p><i class="fa-solid fa-clock" style="color: var(--secondary);"></i> 08:00 - 20:00 (Mở cửa cả tuần)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Nha khoa Bách Khoa Smile. Tất cả quyền được bảo lưu.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Buttons -->
+  <div class="floating-bar">
+    <a href="tel:0976568283" class="float-btn float-btn-phone" title="Gọi ngay"><i class="fa-solid fa-phone-volume"></i></a>
+    <a href="https://zalo.me/0976568283" target="_blank" class="float-btn float-btn-zalo" title="Chat Zalo"><i class="fa-solid fa-comment-dots"></i></a>
+    <button class="float-btn float-btn-calendar btn-open-booking" title="Đặt hẹn"><i class="fa-regular fa-calendar-check"></i></button>
+  </div>
+
+  <!-- Booking Modal -->
+  <div class="modal-overlay" id="bookingModal">
+    <div class="modal-content">
+      <button class="modal-close-btn" id="closeModalBtn">&times;</button>
+      <div style="padding: 36px;">
+        <h3 style="font-size: 1.6rem; font-weight: 800; color: var(--navy); text-align: center; margin-bottom: 20px;">Đặt Hẹn Tư Vấn Báo Giá Miễn Phí</h3>
+        <form id="bookingForm">
+          <div class="form-group">
+            <label class="form-label">Họ và tên (*)</label>
+            <input type="text" id="bookingName" class="form-control" required placeholder="Họ và tên">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Số điện thoại (*)</label>
+            <input type="tel" id="bookingPhone" class="form-control" required placeholder="0976 xxx xxx">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Dịch vụ cần tham khảo giá</label>
+            <select id="bookingService" class="form-control">
+              <option value="Trồng răng Implant">Trồng Răng Implant</option>
+              <option value="Niềng răng Chỉnh nha">Niềng Răng - Chỉnh Nha</option>
+              <option value="Bọc răng sứ">Bọc Răng Sứ Thẩm Mỹ</option>
+              <option value="Nhổ răng khôn">Nhổ Răng Khôn Piezotome</option>
+              <option value="Nha khoa tổng quát">Nha Khoa Tổng Quát</option>
+            </select>
+          </div>
+          <button type="submit" class="btn-primary-gradient" style="width: 100%; padding: 14px; border-radius: var(--radius-sm);">
+            XÁC NHẬN ĐẶT HẸN
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
