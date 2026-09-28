@@ -160,8 +160,69 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  // Floating Green Phone Button Popover
+  const phoneButtons = document.querySelectorAll('.float-btn-phone');
+  
+  // Create Popover element once if not present
+  let callPopover = document.getElementById('callPopover');
+  if (!callPopover) {
+    callPopover = document.createElement('div');
+    callPopover.id = 'callPopover';
+    callPopover.className = 'call-popover';
+    callPopover.innerHTML = `
+      <button class="call-popover-close" id="callPopoverClose" title="Đóng">&times;</button>
+      <div class="call-popover-badge">
+        <span class="status-dot-active"></span> Bác Sĩ Đang Trực Tuyến
+      </div>
+      <div class="call-popover-phone">0976 568 283</div>
+      <p class="call-popover-desc">Nhấn nút bên dưới để chuyển trực tiếp đến bàn phím gọi điện</p>
+      <a href="tel:0976568283" class="call-popover-btn" id="callNowAction">
+        <i class="fa-solid fa-phone-volume"></i> GỌI NGAY: 0976 568 283
+      </a>
+      <button type="button" class="call-copy-btn" id="callCopyBtn">
+        <i class="fa-regular fa-copy"></i> Sao chép số 0976.568.283
+      </button>
+    `;
+    document.body.appendChild(callPopover);
+
+    const closeBtn = document.getElementById('callPopoverClose');
+    if (closeBtn) {
+      closeBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        callPopover.classList.remove('active');
+      });
+    }
+
+    const copyBtn = document.getElementById('callCopyBtn');
+    if (copyBtn) {
+      copyBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        navigator.clipboard.writeText('0976568283').then(() => {
+          showToast('Đã sao chép số điện thoại 0976.568.283 vào bộ nhớ tạm!', 'success');
+        }).catch(() => {
+          showToast('Số điện thoại: 0976568283', 'info');
+        });
+      });
+    }
+
+    document.addEventListener('click', (e) => {
+      if (!callPopover.contains(e.target) && !e.target.closest('.float-btn-phone')) {
+        callPopover.classList.remove('active');
+      }
+    });
+  }
+
+  phoneButtons.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      callPopover.classList.toggle('active');
+    });
+  });
+
   // Toast System
   function showToast(message, type = 'info') {
+
     let toastContainer = document.getElementById('toastContainer');
     if (!toastContainer) {
       toastContainer = document.createElement('div');
